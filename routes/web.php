@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\wthLvJuzzlim;
 use App\Http\Controllers\wthLvKopi;
 use App\Http\Livewire\DashboardIndex;
 use App\Http\Livewire\GenerateIndex;
@@ -55,6 +56,9 @@ Route::middleware([
 
     // Slug Landing Page Product1
     Route::get('/{id}/1/{slug}/kopi-bongkarr/bisakita.co.id', wthLvKopi::class)->name('detailsPost.index');
+
+    // Slug Landing Page Product1
+    Route::get('/{id}/3/{slug}/juzzlim/bisakita.co.id', wthLvJuzzlim::class)->name('detailsPostJuzzlim.index');
 
 
 });
