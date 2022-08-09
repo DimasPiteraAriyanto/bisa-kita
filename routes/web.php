@@ -26,6 +26,14 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+Route::get('/kopi', function () {
+    return view('kopi-index');
+});
+
+Route::get('/fitpropolis', function () {
+    return view('fitpropolis-index');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -55,7 +63,4 @@ Route::middleware([
 
     // Slug Landing Page Product1
     Route::get('/{id}/1/{slug}/kopi-bongkarr/bisakita.co.id', wthLvKopi::class)->name('detailsPost.index');
-
-
 });
-
